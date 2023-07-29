@@ -5,7 +5,19 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <div class="home-container">
+      <h1><%= title %></h1>
+      <a href="/new">Add New Message</a>
+      <div class="message">
+      <% messages.forEach(message => { %>
+           <div class="single-message">
+              <p><%= message.user %></p>
+              <p><%= message.text %></p>
+              <p><%= message.added.toUTCString()%></p>
+           </div>
+      <% }) %>       
+
+      </div>
+  </div>
   </body>
 </html>

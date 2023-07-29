@@ -1,9 +1,11 @@
 var express = require('express');
-var router = express.Router();
+ const router = express.Router();
+ const messages = require('./data');
+ 
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Xpress' });
+  res.render('index', { title: 'Message Board',messages:messages });
 });
 
 module.exports = router;
