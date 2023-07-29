@@ -1,11 +1,58 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+*{
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0px;
 }
+/*HOME PAGE*/
+.home-container{
+ margin: 0 auto;
+  max-width: 900px;
+  padding: 10px;
+  margin-top: 18px;
 
-a {
-  color: #00B7FF;
+}
+.home-container a{
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.add-message:hover{
+  border-bottom: 1px solid white;
+  transform: scale(2);
+ 
+}
+body{
+  background-color: #1BA4FF;
+  background-image: url('../images/wave_background\ \(2\).png');
+  background-size: cover;
+}
+.parent-title{
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
 }
 .single-message{
-  border:1px solid green;
+  
+  background: rgba(255,255,255,0.5);
+-webkit-backdrop-filter: blur(10px);
+backdrop-filter: blur(10px);
+border: 1px solid rgba(255,255,255,0.25);
+  min-height: 100px;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  width: 100%;
+}
+.sender{
+  font-weight: bolder;
+  font-size: 17px;
+  margin-bottom: 2px;
+}
+
+.time{
+  font-weight: 400;
+  font-size: 14px;
+  position: relative;
+  top: 8px;
 }
